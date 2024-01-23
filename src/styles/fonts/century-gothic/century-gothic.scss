@@ -1,0 +1,29 @@
+@mixin centurygothic() {
+    @font-face {
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./Century-Gothic.otf') format('otf'), /* Super Modern Browsers */
+    }
+    
+    @font-face {
+        font-family: 'Century Gothic';
+        font-style: italic;
+        font-weight: 400;
+        src: url('./Century-Gothic-Italic.otf') format('otf'), /* Super Modern Browsers */
+    }
+
+    @font-face {
+        font-family: 'Century Gothic';
+        font-style: normal;
+        font-weight: bold;
+        src: url('./Century-Gothic-Bold.otf') format('otf'), /* Super Modern Browsers */
+    }
+
+    @font-face {
+        font-family: 'Century Gothic';
+        font-style: italic;
+        font-weight: bold;
+        src: url('./Century-Gothic-Bold-Italic.otf') format('otf'), /* Super Modern Browsers */
+    }
+}

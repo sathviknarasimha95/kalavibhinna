@@ -1,0 +1,61 @@
+@import './feather.scss';
+
+
+.kv-icon {
+    display: inline-block;
+    vertical-align: middle;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+  }
+
+  .kv-icon-sm {
+    font-size: 0.8em;
+  }
+
+  .kv-icon-md {
+    font-size: 1.2em;
+  }
+  
+  .kv-icon-lg {
+    font-size: 1.2em;
+  }
+  
+  .kv-icon-12 {
+    font-size: 12px;
+  }
+
+  .kv-icon-14 {
+    font-size: 14px;
+  }
+
+  .kv-icon-16 {
+    font-size: 16px;
+  }
+
+  .kv-icon-20 {
+    font-size: 20px;
+  }
+
+  .kv-icon-24 {
+    font-size: 24px;
+  }
+
+  .kv-icon-28 {
+    font-size: 28px;
+  }
+  
+  .kv-icon-32 {
+    font-size: 32px;
+  }
+  
+  .kv-icon-bg-square,
+  .kv-icon-bg-circle {
+    padding: 0.35em;
+  }
+  
+  .kv-icon-bg-circle {
+    border-radius: 50%;
+  }

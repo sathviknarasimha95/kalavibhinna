@@ -1,0 +1,11 @@
+@import './override.scss';
+@import './light/light-theme.scss';
+@import './dark/dark-theme.scss';
+
+html, html[class="light"] {
+    @include theme-override($light-theme);
+}
+
+html[class="dark"]{
+    @include theme-override($dark-theme);
+}

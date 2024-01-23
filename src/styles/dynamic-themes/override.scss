@@ -1,0 +1,74 @@
+@import './get-color';
+
+
+@mixin theme-override($theme) {
+    *::-webkit-scrollbar {
+        background-color: transparent;
+        width: 5px
+    }
+
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: get-color($theme, bg-3, 1);
+        border-radius: 16px;
+        border: 2px solid transparent;
+    }
+
+    body {
+        background: get-color($theme, bg-1, 1);
+        color: get-color($theme, text-primary, 1);
+
+        .text-default {
+            color: get-color($theme, text-primary, 1) !important;
+        }
+
+        .text-primary {
+            color: get-color($theme, text-primary, 1) !important;
+        }
+
+        .text-muted {
+            color: get-color($theme, text-secondary, 1) !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ol li,
+        ul li,
+        .label,
+        pre {
+            color: get-color($theme, text-primary, 1);
+        }
+
+        // .kv-icon {
+        //     color: get-color($theme, text-primary, 1);
+        // }
+        // .navbar .navbar-top{
+        //     background: get-color($theme, bg-1, 1);
+        // }
+
+        .nav-link {
+            color: get-color($theme, text-secondary, 0.7);
+            transition: 0.2s color ease-in-out;
+
+            &:hover {
+                color: get-color($theme, text-secondary, 0.8);
+            }
+
+            &.disabled {
+                color: get-color($theme, text-secondary, 0.5);
+            }
+
+            &.no-opacity {
+                color: get-color($theme, text-secondary, 1) !important;
+            }
+        }
+    }
+}

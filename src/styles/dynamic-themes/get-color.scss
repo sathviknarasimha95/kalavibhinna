@@ -1,0 +1,9 @@
+@function get-color($theme, $color-id, $alpha: 1) {
+    @if map-get($theme, $color-id) {
+        @if type-of($alpha) !='number' {
+            @return rgba(map-get($theme, $color-id), map-get($theme, $alpha));
+        }
+        @return rgba(map-get($theme, $color-id), $alpha);
+    }
+    @return '';
+}

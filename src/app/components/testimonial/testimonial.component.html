@@ -1,0 +1,22 @@
+<div class="testimonial p-4">
+    <ng-container>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="icon arrow-left p-5">
+                <i class="kv-icon kv-icon-24 kv-icon-arrow-left cursor-pointer" (click)="onPreviousClick()"></i>
+            </div>
+            <div class="item" *ngFor="let slide of slides; let i = index" [@slideAnimation]="animationType">
+                <div *ngIf="i === currentSlide">
+                    <p class="testinomials text-center">{{slide.content}}</p>
+                    <p class="testinomials-name mt-2 text-center">{{slide.person}}</p>
+                    <p class="testinomials-desc mt-2 text-center">{{slide.position}}</p>
+                </div>
+            </div>
+            <div class="icon arrow-right p-5">
+                <i class="kv-icon kv-icon-24 kv-icon-arrow-right cursor-pointer" (click)="onNextClick()"></i>
+            </div>
+        </div>
+        <div class="pagination p-3">
+            <span class="ellipse" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide" (click)="goToSlide(i)"></span>
+        </div>
+    </ng-container>
+</div>

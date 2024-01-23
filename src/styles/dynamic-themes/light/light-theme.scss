@@ -1,0 +1,18 @@
+$light-theme: (
+    bg-1: rgb(255, 255, 255), //body
+    bg-2: rgb(50,50,50,50),
+    bg-3: rgb(255, 255, 255), //popups tooltips dropdown
+    bg-4: rgb(255, 255, 255), //modal  
+    text-primary: rgb(0, 0, 0),
+    text-secondary: rgb(153, 153, 153),
+);
+
+.light {
+    --text-primary : 0, 0, 0;
+    --text-secondary: 153, 153, 153;
+    --bg-1: 30, 30, 30; //body
+    --bg-2: 50, 50, 50; //cards and tables
+    --bg-3: 255, 255, 255; //popups tooltips
+    --bg-4: 255, 255, 255; //modal
+    --accent-color : 153, 153, 153;
+}

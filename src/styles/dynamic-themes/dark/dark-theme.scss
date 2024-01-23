@@ -1,0 +1,12 @@
+$dark-theme: (
+    bg-1: rgb(0, 0, 0), //body
+    text-primary: rgb(255, 255, 255),
+    text-secondary: rgb(153, 153, 153),
+);
+
+.dark {
+    --text-primary : 255, 255, 255;
+    --text-secondary: 153, 153, 153;
+    --bg-1: 17,17,17
+    --accent-color : 153, 153, 153;
+}

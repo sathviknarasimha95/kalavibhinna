@@ -1,0 +1,59 @@
+@mixin poppins() {
+   /* devanagari */
+ /* styles/fonts/poppins/poppins-100 - devanagari */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./poppins-v9-devanagari-100.woff2') format('woff2'), /* Super Modern Browsers */
+}
+  /* styles/fonts/poppins/poppins-200 - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./poppins-v9-devanagari-200.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* styles/fonts/poppins/poppins-300 - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('./poppins-v9-devanagari-300.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* styles/fonts/poppins/poppins-regular - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./poppins-v9-devanagari-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* styles/fonts/poppins/poppins-500 - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./poppins-v9-devanagari-500.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* styles/fonts/poppins/poppins-600 - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./poppins-v9-devanagari-600.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* styles/fonts/poppins/poppins-800 - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('./poppins-v9-devanagari-800.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* styles/fonts/poppins/poppins-900 - devanagari */
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('./poppins-v9-devanagari-900.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+}

@@ -1,0 +1,18 @@
+<div class="container pb-5">
+    <div class="row mt-5 animate__animated animate__fadeInUp">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+            <p class="text-center text-uppercase section-title">Completed Projects</p>
+        </div>
+    </div>
+    <div class="ongoing-projects animate__animated animate__fadeInUp">
+        <kv-image-grid [projects]="completedProjects"></kv-image-grid>
+    </div>
+    <div class="row mt-5 animate__animated animate__fadeInUp">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+            <p class="text-center text-uppercase section-title">Ongoing Projects</p>
+        </div>
+    </div>
+    <div class="completed-projects animate__animated animate__fadeInUp">
+        <kv-image-grid [projects]="ongoingProjects"></kv-image-grid>
+    </div>
+</div>

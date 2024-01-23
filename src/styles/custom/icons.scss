@@ -1,0 +1,48 @@
+.kv-icon {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*------------------------
+change icon size
+-------------------------*/
+
+.kv-icon-sm {
+    width: 1em !important;
+    height: 1em !important;
+}
+
+.kv-icon-lg {
+    width: 1.6em !important;
+    height: 1.6em !important;
+}
+
+/* absolute units */
+
+.kv-icon-16 {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.kv-icon-32 {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+/*----------------------------------
+add a square/circle background
+-----------------------------------*/
+
+.bg-square,
+.bg-circle {
+    padding: 0.35em !important;
+    border: 1px solid !important;
+}
+
+.bg-circle {
+    border-radius: 50% !important;
+}

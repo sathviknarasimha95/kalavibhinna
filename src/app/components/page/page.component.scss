@@ -1,0 +1,23 @@
+.kv-page {
+    .page {
+        transition: 300ms padding ease-in-out;
+        .navbar-top {
+            position: sticky;
+            top:0px;
+            z-index:1002;
+            background: white;
+        }
+
+        .footer-bottom {
+            position:sticky;
+            bottom: 0px;
+            z-index: 1002;
+            background: white;
+        }
+    }
+    .page-content {
+        padding-top: 5px !important;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
