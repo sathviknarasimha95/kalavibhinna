@@ -3,7 +3,7 @@
         <div class="col-md-6 col-sm-12 col-lg-6" *ngFor="let project of this.currentPageItems">
             <div class="image-container">
                 <img [src]="project.projectDisplayImage" class="img-fluid cursor-pointer" alt="Image 1" (click)="onImageClick(project)">
-                <div class="image-overlay">
+                <div class="image-overlay cursor-pointer"  (click)="onImageClick(project)">
                 </div>
             </div>
             <div class="project-title mt-2 text-center">{{project.projectName}}</div>

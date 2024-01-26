@@ -9,7 +9,8 @@ import { Paginator } from './image-grid-paginator';
 })
 export class ImageGridComponent implements OnInit {
     @Input() projects: Project[] = []
-    @Output() onClick: EventEmitter<Project> | undefined;
+
+    @Output() onClick: EventEmitter<Project> = new EventEmitter<Project>();
     paginator: Paginator | undefined;
     public currentPageItems: Project[] | undefined = []
 

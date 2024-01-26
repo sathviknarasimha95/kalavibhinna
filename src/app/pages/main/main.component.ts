@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 // import {FadeIn} from './animation';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -9,4 +11,9 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
+  constructor(private router: Router) { }
+
+  onProjectClick(){
+    this.router.navigate(['/project']);
+  }
 }

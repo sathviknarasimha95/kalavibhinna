@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Project } from '../../components/image-grid/image-grid.model';
 import { ProjectService } from '../services/project.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-projects',
@@ -8,9 +10,8 @@ import { ProjectService } from '../services/project.service';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  constructor() {
-    
-  }
+  constructor(private router: Router) { }
+
   ongoingProjects: Project[] = [
     {
       projectId: 1,
@@ -76,4 +77,8 @@ export class ProjectsComponent {
       projectDisplayImage: 'assets/projects-8.jpg'
     }
   ]
+
+  onProjectClick(project: Project) {
+    this.router.navigate(['/project/',project.projectId ]);
+  }
 }

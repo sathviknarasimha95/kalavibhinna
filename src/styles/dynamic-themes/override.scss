@@ -47,28 +47,35 @@
             color: get-color($theme, text-primary, 1);
         }
 
-        // .kv-icon {
-        //     color: get-color($theme, text-primary, 1);
-        // }
-        // .navbar .navbar-top{
-        //     background: get-color($theme, bg-1, 1);
-        // }
+        .kv-icon {
+            color: get-color($theme, text-primary, 1);
+        }
+
+        .navbar-top {
+            background: get-color($theme, bg-1, 1);
+        }
+
+        .footer-bottom {
+            background: get-color($theme, bg-1, 1);
+        }
 
         .nav-link {
-            color: get-color($theme, text-secondary, 0.7);
+            color: get-color($theme, text-secondary, 1);
             transition: 0.2s color ease-in-out;
 
             &:hover {
-                color: get-color($theme, text-secondary, 0.8);
+                color: get-color($theme, text-primary, 1);
             }
 
-            &.disabled {
-                color: get-color($theme, text-secondary, 0.5);
-            }
-
-            &.no-opacity {
-                color: get-color($theme, text-secondary, 1) !important;
+            &.active {
+                color: get-color($theme, text-primary, 1);
             }
         }
+
+        // .image-overlay {
+        //     .heading {
+        //         color: get-color($theme, text-primary, 1);
+        //     }
+        // }
     }
 }

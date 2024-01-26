@@ -20,10 +20,10 @@ const routes: Routes = [
     path: 'about-us', component: AboutComponent
   },
   {
-    path: 'projects', component: ProjectsComponent 
+    path: 'project', component: ProjectsComponent 
   },
   {
-    path: 'project', component: ProjectComponent
+    path: 'project/:id', component: ProjectComponent
   },
   {
     path: 'contact-us', component: ConactUsComponent
